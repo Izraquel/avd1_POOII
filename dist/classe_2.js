@@ -28,3 +28,4 @@ var ConversaoDeUnidadeDeTempo = /** @class */ (function () {
     };
     return ConversaoDeUnidadeDeTempo;
 }());
+console.log("" + ConversaoDeUnidadeDeTempo.minutoSegundos(8));

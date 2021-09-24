@@ -33,6 +33,7 @@ class ConversaoDeUnidadeDeTempo {
     }
 }
 
+console.log(`${ConversaoDeUnidadeDeTempo.minutoSegundos(8)}`);
 
 
 
