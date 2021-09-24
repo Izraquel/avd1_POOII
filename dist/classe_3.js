@@ -77,17 +77,15 @@ var Funcionarios = /** @class */ (function () {
         return 0;
     };
     Funcionarios.prototype.metodoDesconto = function () {
-        return this.metodoCalcularSalarioBruto() - 0.05;
+        return this.metodoCalcularSalarioBruto() * 0.05;
     };
     Funcionarios.prototype.metodoSalarioLiquido = function () {
         return this.metodoCalcularSalarioBruto() - this.metodoDesconto() + this.metodoPLR();
     };
     return Funcionarios;
 }());
-var funcionarios = new Funcionarios('Raquel', 80, 180, 8);
+var funcionarios = new Funcionarios('Raquel', 80, 180, 0);
 console.log("O funcion\u00E1rio de nome " + funcionarios.nome + " tem o sal\u00E1rio bruto de " + funcionarios.metodoCalcularSalarioBruto() + ", teve " + funcionarios.totalFaltasAno + " falta(s) e sua PLR foi\nde " + funcionarios.metodoPLR() + ".");
 console.log('\n');
-/* const funcionarioss = new Funcionarios('Silvio', 90, 50, 4)
-console.log(`O funcionário de nome ${funcionarioss.nome} tem o salário bruto de ${funcionarioss.metodoCalcularSalarioBruto()}, o desconto de ${funcionarioss.metodoDesconto()}, a PLR de
-${funcionarioss.metodoPLR()} e o salário líquido de ${funcionarioss.metodoSalarioLiquido()}.`);
- */ 
+var funcionarioss = new Funcionarios('Silvio', 90, 50, 0);
+console.log("O funcion\u00E1rio de nome " + funcionarioss.nome + " tem o sal\u00E1rio bruto de " + funcionarioss.metodoCalcularSalarioBruto() + ", o desconto de " + funcionarioss.metodoDesconto() + ", a PLR de\n" + funcionarioss.metodoPLR() + " e o sal\u00E1rio l\u00EDquido de " + funcionarioss.metodoSalarioLiquido());

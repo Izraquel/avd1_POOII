@@ -47,31 +47,32 @@ class NumeroUm {
         if(this.quantidade <= 10) {
             return 0 //não tem desconto
         } else if (this.quantidade <= 20) {
-            return this._preco * 0.1
+            return this._preco * this.quantidade * 0.1
         } else if (this.quantidade <= 50) {
-            return this._preco * 0.2
+            return this._preco * this.quantidade * 0.2
         } else {
-            return this._preco * 0.25
+            return this._preco * this.quantidade * 0.25
         }
+        
     }
 
-    metodoPrecoDesconto(){
+     metodoTotal(){
         return this.quantidade * this.preco - this.metodoDesconto()
-    }
+    } 
 
 }
 
 const numeroUm = new NumeroUm('Notebook Acer', 2800, 11)
-console.log(`O produto ${numeroUm.produto} de preço ${numeroUm.preco}, quantidade comprada de ${numeroUm.quantidade} teve o desconto de ${numeroUm.metodoDesconto()} e o valor pago foi de ${numeroUm.metodoPrecoDesconto()}`);
+console.log(`O produto ${numeroUm.produto} de preço ${numeroUm.preco}, quantidade comprada de ${numeroUm.quantidade} teve o desconto de ${numeroUm.metodoDesconto()} e o valor pago foi de ${numeroUm.metodoTotal()}`);
 
-try {
+/* try {
     numeroUm.produto = 'Xiomi Redmi Note 8'
     numeroUm.preco = 1900
     numeroUm.quantidade = 0
 } catch (err:any) {
     console.log(err.message);
     
-}
+} */
 
 //console.log(`O produto ${numeroUm.produto} de preço ${numeroUm.preco}, quantidade comprada de ${numeroUm.quantidade} teve o desconto de ${numeroUm.metodoDesconto()} e o valor pago foi de ${numeroUm.metodoPrecoDesconto()}`);
 

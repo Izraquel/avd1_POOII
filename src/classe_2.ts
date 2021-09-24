@@ -33,7 +33,15 @@ class ConversaoDeUnidadeDeTempo {
     }
 }
 
-console.log(`${ConversaoDeUnidadeDeTempo.minutoSegundos(8)}`);
+console.log(`${ConversaoDeUnidadeDeTempo.minutoSegundos(8)}`)
+console.log(`${ConversaoDeUnidadeDeTempo.horaMinutos(9)}`)
+console.log(`${ConversaoDeUnidadeDeTempo.diaHoras(10)}`)
+console.log(`${ConversaoDeUnidadeDeTempo.semanaDias(11)}`)
+console.log(`${ConversaoDeUnidadeDeTempo.mesDias(12)}`)
+console.log(`${ConversaoDeUnidadeDeTempo.anoDias(2)}`)
+
+
+
 
 
 

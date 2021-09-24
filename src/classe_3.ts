@@ -69,7 +69,7 @@ class Funcionarios {
      }
 
      metodoDesconto() {
-         return this.metodoCalcularSalarioBruto() - 0.05
+         return this.metodoCalcularSalarioBruto() * 0.05
      }
 
      metodoSalarioLiquido() {
@@ -78,14 +78,14 @@ class Funcionarios {
     
 }
 
-const funcionarios = new Funcionarios('Raquel', 80, 180, 8)
+const funcionarios = new Funcionarios('Raquel', 80, 180, 0)
 console.log(`O funcionário de nome ${funcionarios.nome} tem o salário bruto de ${funcionarios.metodoCalcularSalarioBruto()}, teve ${funcionarios.totalFaltasAno} falta(s) e sua PLR foi
 de ${funcionarios.metodoPLR()}.`)
 
 console.log('\n');
 
 
-/* const funcionarioss = new Funcionarios('Silvio', 90, 50, 4)
+const funcionarioss = new Funcionarios('Silvio', 90, 50, 0)
 console.log(`O funcionário de nome ${funcionarioss.nome} tem o salário bruto de ${funcionarioss.metodoCalcularSalarioBruto()}, o desconto de ${funcionarioss.metodoDesconto()}, a PLR de
-${funcionarioss.metodoPLR()} e o salário líquido de ${funcionarioss.metodoSalarioLiquido()}.`);
- */
+${funcionarioss.metodoPLR()} e o salário líquido de ${funcionarioss.metodoSalarioLiquido()}`);
+ 
